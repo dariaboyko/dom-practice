@@ -61,6 +61,7 @@ const DATA = [
 
 const nav = document.querySelector('#nav');
 const contentWrapper = document.querySelector('#contentWrapper');
+const navbutton = document.querySelector("#navbutton");
 
 const createNavElement = (name) => {
   const navElement = `
@@ -107,7 +108,6 @@ const createContent = (plant) => {
 };
 
 
-const navbutton = document.getElementById("navbutton");
 nav.addEventListener('click', (e) => {
   const linkName = e.target.textContent;
   if(document.getElementsByClassName("main--navigation__link__active")[0]){
